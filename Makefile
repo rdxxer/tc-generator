@@ -1,4 +1,3 @@
-#This Makefile is only compatible with Windows!
 CXXFLAGS = -Wextra --std=c++17 -O5
 CXX = g++
 TARGET = runtime.exe
@@ -12,7 +11,8 @@ runtime_test.o: runtime/runtime_test.cpp
 
 runtime: runtime.o runtime_test.o
 	$(CXX) -o runtime.exe $^
+	.\runtime
 
 clean:
-	del *.o *.exe outfile.txt
+	rm -f *.o *.exe *.in *.out
 	
