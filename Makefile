@@ -1,3 +1,4 @@
+#This Makefile is only compatible with Windows!
 CXXFLAGS = -Wextra --std=c++17 -O5
 CXX = g++
 TARGET = runtime.exe
